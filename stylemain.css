@@ -1,0 +1,191 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    overflow-x: hidden;
+    height: 100%;
+}
+
+/* Navbar Styles */
+/* Gaya Navbar */
+nav {
+    display: flex; /* Menggunakan flexbox untuk menata elemen */
+    justify-content: space-between; /* Memisahkan logo dan tautan */
+    align-items: center; /* Memastikan semua item sejajar secara vertikal */
+    padding: 0.5rem 7%;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #982B1C;
+}
+
+.container-nav {
+    display: flex; /* Menggunakan flexbox untuk menata elemen di dalam kontainer */
+    justify-content: space-between; /* Memisahkan logo dan tautan */
+    align-items: center; /* Memastikan semua item sejajar secara vertikal */
+    width: 100%; /* Menggunakan lebar penuh untuk kontainer */
+}
+
+.logo {
+    display: flex; /* Memastikan logo dan judul berada dalam satu baris */
+    align-items: center; /* Menjaga logo dan teks sejajar secara vertikal */
+}
+
+.logo img {
+    margin-right: 10px; /* Jarak antara logo dan judul */
+}
+
+nav h1 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #DAD4B5;
+    margin: 0; /* Hapus margin default */
+}
+
+.navbar-links {
+    display: flex; /* Menggunakan flexbox untuk tautan */
+    margin-left: auto; /* Memindahkan tautan ke sebelah kanan */
+    gap: 20px; /* Jarak antar tautan */
+}
+
+.navbar-links a {
+    color: #DAD4B5;
+    text-decoration: none;
+    padding: 5px 10px;
+    
+}
+
+.navbar-links a:hover {
+    background-color: #D1973A;
+    border-radius: 15px;
+    
+}
+
+
+/* About Section */
+#about {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    color: white;
+    background-color: #f9f9f9;
+    background-image: linear-gradient(to right, rgba(16, 14, 14, 0.767), rgba(0, 0, 0, 0.322)),
+        url('assets/balla-lompoa.jpg');
+    background-size: cover;
+    background-position: center right;
+    background-repeat: no-repeat;
+    padding: 50px;
+    text-align: center;
+    min-height: 650px;
+}
+
+#about h1 {
+    font-size: 3rem;
+    margin: 0;
+    margin-bottom: 20px;
+    color: #D1973A;
+}
+
+#about p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin: 0;
+}
+#about .container{
+    margin-top: 170px;
+}
+
+/* Gaya untuk Daftar Artikel */
+.articles {
+    display: flex;
+    flex-wrap: wrap; /* Membuat card mengisi ruang dengan baik */
+    gap: 20px; /* Jarak antar card */
+    justify-content: center; /* Memusatkan card */
+}
+
+.article-card {
+    background-color: #fff; /* Warna latar belakang card */
+    border: 1px solid #ccc; /* Border card */
+    border-radius: 8px; /* Sudut membulat */
+    overflow: hidden; /* Memastikan konten tidak melampaui batas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Bayangan untuk efek kedalaman */
+    transition: transform 0.2s; /* Transisi saat hover */
+    cursor: pointer; /* Menunjukkan bahwa card dapat diklik */
+}
+
+.article-card:hover {
+    transform: translateY(-5px); /* Efek naik saat hover */
+}
+
+.card-link {
+    text-decoration: none; /* Menghilangkan garis bawah */
+    color: inherit; /* Mengambil warna dari elemen induk */
+}
+
+.article-image {
+    width: 100%; /* Mengatur lebar gambar agar sesuai dengan card */
+    height: auto; /* Memastikan proporsi gambar */
+}
+
+.article-title {
+    font-size: 1.5rem;
+    margin: 10px 0;
+    color: #333; /* Warna judul */
+}
+
+.article-description {
+    font-size: 1rem;
+    color: #555;
+    padding: 0 10px; /* Jarak pada deskripsi */
+}
+
+.read-more {
+    display: block; /* Membuat 'Baca Selengkapnya' menjadi blok */
+    text-align: center; /* Memusatkan teks */
+    margin: 10px 0; /* Margin atas dan bawah */
+    font-weight: bold;
+    color: #982B1C; /* Warna teks */
+}
+
+.read-more:hover {
+    text-decoration: underline; /* Garis bawah saat hover */
+}
+
+
+/* Footer */
+footer {
+    background-color: #982B1C;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.main-content {
+    min-height: calc(100vh - 100px); /* Menetapkan tinggi minimum, sesuaikan sesuai tinggi navbar dan footer */
+    padding: 40px; /* Menambah padding untuk memberikan ruang di dalam konten */
+    box-sizing: border-box; /* Pastikan padding tidak mempengaruhi total ukuran */
+    background-color: #f9f9f9; /* Tambahkan warna latar belakang jika diperlukan */
+    margin: 20px; /* Tambahkan margin luar jika ingin memberikan jarak dengan batas layar */
+    border-radius: 8px; /* Tambahkan border-radius untuk sudut yang lebih halus */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Tambahkan bayangan untuk efek kedalaman */
+}
+
+.pembuka-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.pembuka-main p{
+    margin-top: -10px;
+    margin-bottom: 70px;
+}

@@ -1,0 +1,164 @@
+/* Reset Default Browser Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Latar belakang abu-abu terang */
+    color: #333; /* Warna teks gelap */
+    line-height: 1.6; /* Tinggi baris untuk keterbacaan */
+}
+
+/* Header Styles */
+header {
+    background: #982B1C; /* Warna latar belakang merah */
+    color: white; /* Warna teks putih */
+    padding: 15px 20px; /* Padding atas dan bawah, kiri dan kanan */
+    text-align: center; /* Menyelaraskan teks di tengah */
+    font-size: 1.5rem; /* Ukuran font */
+}
+
+/* Container Styles */
+.container {
+    display: flex; /* Menggunakan flexbox untuk tata letak */
+    margin: 20px; /* Margin untuk konten utama */
+}
+
+/* Sidebar Styles */
+.sidebar {
+    background: #333; /* Warna latar belakang sidebar */
+    color: white; /* Warna teks sidebar */
+    width: 200px; /* Lebar sidebar */
+    padding: 20px; /* Padding dalam sidebar */
+}
+
+.sidebar nav ul {
+    list-style: none; /* Menghilangkan bullet */
+}
+
+.sidebar nav ul li {
+    margin: 10px 0; /* Margin antar item */
+}
+
+.sidebar nav ul li a {
+    color: white; /* Warna teks tautan */
+    text-decoration: none; /* Menghilangkan garis bawah */
+    padding: 10px; /* Padding dalam tautan */
+    display: block; /* Membuat tautan sebagai blok */
+    border-radius: 5px; /* Sudut membulat */
+    transition: background 0.3s; /* Efek transisi saat hover */
+}
+
+.sidebar nav ul li a:hover {
+    background: #D1973A; /* Warna latar belakang saat hover */
+}
+
+/* Content Styles */
+.content {
+    flex: 1; /* Mengisi sisa ruang yang tersedia */
+    padding: 20px; /* Padding dalam konten utama */
+    background: white; /* Latar belakang putih untuk konten utama */
+    border-radius: 5px; /* Sudut membulat */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Bayangan untuk efek kedalaman */
+}
+
+/* Form Styles */
+form {
+    margin-bottom: 20px; /* Margin bawah untuk pemisahan */
+}
+
+form h2 {
+    margin-bottom: 15px; /* Margin bawah untuk judul form */
+    color: #982B1C; /* Warna judul */
+}
+
+label {
+    display: block; /* Menampilkan label sebagai blok */
+    margin: 10px 0 5px; /* Margin untuk label */
+}
+
+input[type="text"],
+input[type="file"] {
+    width: 100%; /* Lebar penuh */
+    padding: 10px; /* Padding dalam input */
+    border: 1px solid #ccc; /* Border input */
+    border-radius: 5px; /* Sudut membulat */
+    margin-bottom: 15px; /* Margin bawah untuk input */
+}
+
+.add-button {
+    display: flex; /* Menggunakan flexbox untuk tombol */
+    gap: 10px; /* Memisahkan tombol */
+}
+
+button {
+    background: #D1973A; /* Warna tombol */
+    color: white; /* Warna teks tombol */
+    border: none; /* Menghilangkan border default */
+    padding: 10px 15px; /* Padding dalam tombol */
+    border-radius: 5px; /* Sudut membulat */
+    cursor: pointer; /* Menunjukkan bahwa tombol dapat diklik */
+    transition: background 0.3s; /* Efek transisi saat hover */
+}
+
+button:hover {
+    background: #982B1C; /* Warna tombol saat hover */
+}
+
+/* Tabel Styles */
+table {
+    width: 100%; /* Lebar penuh untuk tabel */
+    border-collapse: collapse; /* Menghilangkan jarak antara sel */
+    margin-top: 20px; /* Margin atas untuk pemisahan */
+}
+
+table, th, td {
+    border: 1px solid #ccc; /* Border untuk tabel */
+}
+
+th, td {
+    padding: 10px; /* Padding dalam sel */
+    text-align: left; /* Teks rata kiri */
+}
+
+th {
+    background: #982B1C; /* Warna latar belakang untuk header tabel */
+    color: white; /* Warna teks header tabel */
+}
+
+tr:nth-child(even) {
+    background: #f9f9f9; /* Warna latar belakang baris genap */
+}
+
+
+
+/* Mengatur desain tombol aksi yang dibuat dengan tag <a> */
+.tombol {
+    display: inline-block;
+    max-width: 150px;
+    padding: 15px 30px;
+    color: #fff;
+    text-decoration: none;
+    background: #038ade;
+    cursor: pointer;
+  }
+  /* Desain tombol edit dan hapus agar lebih kecil*/
+  .tombol.edit,
+  .tombol.hapus {
+    padding: 10px 15px;
+    font-size: 12px;
+    border-radius: 4px;
+  }
+  .tombol.hapus {
+    background: #fc4c4c;
+  }
+  .tombol.edit:hover {
+    background-color: #0056b3;
+  }
+  .tombol.hapus:hover {
+    background-color: #c82333;
+  }
